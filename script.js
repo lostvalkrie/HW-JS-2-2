@@ -39,3 +39,34 @@ console.log("FOR 2");
 for (let i = 10; i <= 50; i += 5) {
   console.log(i);
 }
+
+// 3
+const number1 = Number(prompt("Insert first number"));
+const number2 = Number(prompt("Insert second number"));
+const max = Math.max(number1, number2);
+const min = Math.min(number1, number2);
+
+console.log("WHILE 3");
+let whileMin = min;
+let whileSummer = 0;
+while (whileMin <= max) {
+  whileSummer += whileMin;
+  console.log(whileSummer);
+  whileMin++;
+}
+
+console.log("DO WHILE 3");
+let doWhileMin = min;
+let doWhileSummer = 0;
+do {
+  doWhileSummer += doWhileMin;
+  console.log(doWhileSummer);
+  doWhileMin++;
+} while (doWhileMin <= max);
+
+console.log("FOR 3");
+let forSummer = 0;
+for (let i = min; i <= max; i++) {
+  forSummer += i;
+  console.log(forSummer);
+}
