@@ -87,3 +87,18 @@ while (true) {
     console.log("close");
   } else console.log("NOT close");
 }
+
+// 5
+let stepCounter = 0;
+while (true) {
+  const input = prompt("Enter amount of staps or 'stop'");
+  if (input === null || input.toLowerCase() === "stop") {
+    console.log(stepCounter);
+    break;
+  }
+  const yourSteps = Number(input);
+
+  if (yourSteps >= 0 && !Number.isNaN(yourSteps)) {
+    stepCounter += yourSteps;
+  }
+}
