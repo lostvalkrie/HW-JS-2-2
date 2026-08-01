@@ -70,3 +70,20 @@ for (let i = min; i <= max; i++) {
   forSummer += i;
   console.log(forSummer);
 }
+
+// 4
+const secretNumber = Math.floor(Math.random() * 20) + 1;
+while (true) {
+  const yourInput = prompt("Insert number");
+
+  if (yourInput === null) break;
+
+  const yourNumber = Number(yourInput);
+
+  if (yourNumber === secretNumber) {
+    alert(`You won! Number was ${secretNumber}`);
+    break;
+  } else if (Math.abs(secretNumber - yourNumber) <= 3) {
+    console.log("close");
+  } else console.log("NOT close");
+}
